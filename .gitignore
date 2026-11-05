@@ -7,6 +7,7 @@
 /.cache
 /.tmp
 /storage
+/environment_check_*/
 __pycache__/
 *.py[cod]
 *.pt
