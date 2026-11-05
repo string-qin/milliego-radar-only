@@ -1,0 +1,1698 @@
+{
+  "definition": "Intrinsic XYZ Euler z in radar coordinates, degrees; positive/negative are label signs, not guaranteed physical left/right. Full 3D geodesic errors also provided.",
+  "scope": "Same 8 held-out training routes; single checkpoints; multiple training settings differ. No causal attribution to warmup alone.",
+  "by_route": {
+    "12_21_2020_arpg_lab_run4": {
+      "yaw_warmup": {
+        "all": {
+          "n": 689,
+          "yaw_rmse_deg": 1.456174032093782,
+          "yaw_mae_deg": 1.1526473654300868,
+          "signed_bias_deg": -0.3848306656601109,
+          "rotation_geodesic_rmse_deg": 3.3032872206471846,
+          "reference_mean_deg": -0.13104481667326973,
+          "prediction_mean_deg": -0.5158754823333809
+        },
+        "near_straight_abs_lt1": {
+          "n": 238,
+          "yaw_rmse_deg": 1.2569583204580044,
+          "yaw_mae_deg": 0.9888499763406667,
+          "signed_bias_deg": -0.5683583614554442,
+          "rotation_geodesic_rmse_deg": 3.0964633795580427,
+          "reference_mean_deg": 0.019981027724650307,
+          "prediction_mean_deg": -0.5483773337307941
+        },
+        "small_turn_1to3": {
+          "n": 274,
+          "yaw_rmse_deg": 1.4081291955264126,
+          "yaw_mae_deg": 1.0940594098613707,
+          "signed_bias_deg": -0.48478780027742274,
+          "rotation_geodesic_rmse_deg": 3.3580877904900537,
+          "reference_mean_deg": -0.23670306058376483,
+          "prediction_mean_deg": -0.7214908608611875
+        },
+        "strong_turn_abs_ge3": {
+          "n": 177,
+          "yaw_rmse_deg": 1.7493558900310022,
+          "yaw_mae_deg": 1.4635901814137602,
+          "signed_bias_deg": 0.016682591314085164,
+          "rotation_geodesic_rmse_deg": 3.4822965698826445,
+          "reference_mean_deg": -0.17055776658981964,
+          "prediction_mean_deg": -0.15387517527573527,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.179608578897523
+        },
+        "positive_ge3": {
+          "n": 80,
+          "yaw_rmse_deg": 1.8416252331215281,
+          "yaw_mae_deg": 1.5670843790609503,
+          "signed_bias_deg": -1.2864868737641786,
+          "rotation_geodesic_rmse_deg": 3.897190485104472,
+          "reference_mean_deg": 6.17507791212568,
+          "prediction_mean_deg": 4.8885910383615006,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.286486873764179
+        },
+        "negative_le_minus3": {
+          "n": 97,
+          "yaw_rmse_deg": 1.669424455937443,
+          "yaw_mae_deg": 1.3782341421171087,
+          "signed_bias_deg": 1.0914615315848182,
+          "rotation_geodesic_rmse_deg": 3.0985920143646792,
+          "reference_mean_deg": -5.404071728417035,
+          "prediction_mean_deg": -4.312610196832218,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.0914615315848168
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 689,
+          "yaw_rmse_deg": 2.434620973104671,
+          "yaw_mae_deg": 1.9363816124933277,
+          "signed_bias_deg": 0.1714514145107273,
+          "rotation_geodesic_rmse_deg": 3.827111565675149,
+          "reference_mean_deg": -0.13104481667326973,
+          "prediction_mean_deg": 0.040406597837457627
+        },
+        "near_straight_abs_lt1": {
+          "n": 238,
+          "yaw_rmse_deg": 1.94059280144656,
+          "yaw_mae_deg": 1.6087802191462306,
+          "signed_bias_deg": 0.130169446629531,
+          "rotation_geodesic_rmse_deg": 3.4106235259651068,
+          "reference_mean_deg": 0.019981027724650307,
+          "prediction_mean_deg": 0.15015047435418055
+        },
+        "small_turn_1to3": {
+          "n": 274,
+          "yaw_rmse_deg": 2.1036019633142384,
+          "yaw_mae_deg": 1.6832328538956538,
+          "signed_bias_deg": 0.14534016446428355,
+          "rotation_geodesic_rmse_deg": 3.715502946053305,
+          "reference_mean_deg": -0.23670306058376483,
+          "prediction_mean_deg": -0.09136289611948054
+        },
+        "strong_turn_abs_ge3": {
+          "n": 177,
+          "yaw_rmse_deg": 3.340549813728912,
+          "yaw_mae_deg": 2.768765180133845,
+          "signed_bias_deg": 0.26738130642287583,
+          "rotation_geodesic_rmse_deg": 4.472498411421477,
+          "reference_mean_deg": -0.17055776658981964,
+          "prediction_mean_deg": 0.09682353983305653,
+          "direction_accuracy": 0.9152542372881356,
+          "signed_magnitude_shortfall_deg": 2.6155048440893043
+        },
+        "positive_ge3": {
+          "n": 80,
+          "yaw_rmse_deg": 3.4439947582469124,
+          "yaw_mae_deg": 2.8740677379425636,
+          "signed_bias_deg": -2.597611663543486,
+          "rotation_geodesic_rmse_deg": 4.801887492280419,
+          "reference_mean_deg": 6.17507791212568,
+          "prediction_mean_deg": 3.577466248582194,
+          "direction_accuracy": 0.9125,
+          "signed_magnitude_shortfall_deg": 2.5976116635434865
+        },
+        "negative_le_minus3": {
+          "n": 97,
+          "yaw_rmse_deg": 3.2527598744491715,
+          "yaw_mae_deg": 2.681917709776139,
+          "signed_bias_deg": 2.630262106395133,
+          "rotation_geodesic_rmse_deg": 4.181357696473375,
+          "reference_mean_deg": -5.404071728417035,
+          "prediction_mean_deg": -2.773809622021902,
+          "direction_accuracy": 0.9175257731958762,
+          "signed_magnitude_shortfall_deg": 2.6302621063951332
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 689,
+          "yaw_rmse_deg": 3.379104631758922,
+          "yaw_mae_deg": 2.4082953492997166,
+          "signed_bias_deg": -0.18594447499532102,
+          "rotation_geodesic_rmse_deg": 4.506618647519952,
+          "reference_mean_deg": -0.13104481667326973,
+          "prediction_mean_deg": -0.3169892916685905
+        },
+        "near_straight_abs_lt1": {
+          "n": 238,
+          "yaw_rmse_deg": 0.7600787244281939,
+          "yaw_mae_deg": 0.6050470221217039,
+          "signed_bias_deg": -0.3956391293738668,
+          "rotation_geodesic_rmse_deg": 2.952612281231081,
+          "reference_mean_deg": 0.019981027724650307,
+          "prediction_mean_deg": -0.3756581016492165
+        },
+        "small_turn_1to3": {
+          "n": 274,
+          "yaw_rmse_deg": 1.9645241295042373,
+          "yaw_mae_deg": 1.8497787551481497,
+          "signed_bias_deg": -0.07402880107326007,
+          "rotation_geodesic_rmse_deg": 3.6424570043734166,
+          "reference_mean_deg": -0.23670306058376483,
+          "prediction_mean_deg": -0.31073186165702477
+        },
+        "strong_turn_abs_ge3": {
+          "n": 177,
+          "yaw_rmse_deg": 6.13974791226058,
+          "yaw_mae_deg": 5.697598449107041,
+          "signed_bias_deg": -0.07723016376679447,
+          "rotation_geodesic_rmse_deg": 6.8408727334414206,
+          "reference_mean_deg": -0.17055776658981964,
+          "prediction_mean_deg": -0.24778793035661328,
+          "direction_accuracy": 0.5141242937853108,
+          "signed_magnitude_shortfall_deg": 5.69759844910704
+        },
+        "positive_ge3": {
+          "n": 80,
+          "yaw_rmse_deg": 6.800391711506599,
+          "yaw_mae_deg": 6.38840415299168,
+          "signed_bias_deg": -6.38840415299168,
+          "rotation_geodesic_rmse_deg": 7.556741968544022,
+          "reference_mean_deg": 6.17507791212568,
+          "prediction_mean_deg": -0.21332624086599855,
+          "direction_accuracy": 0.3,
+          "signed_magnitude_shortfall_deg": 6.388404152991678
+        },
+        "negative_le_minus3": {
+          "n": 97,
+          "yaw_rmse_deg": 5.535876511705706,
+          "yaw_mae_deg": 5.1278617861094,
+          "signed_bias_deg": 5.1278617861094,
+          "rotation_geodesic_rmse_deg": 6.188463329010976,
+          "reference_mean_deg": -5.404071728417035,
+          "prediction_mean_deg": -0.27620994230763585,
+          "direction_accuracy": 0.6907216494845361,
+          "signed_magnitude_shortfall_deg": 5.1278617861094
+        }
+      }
+    },
+    "12_21_2020_ec_hallways_run4": {
+      "yaw_warmup": {
+        "all": {
+          "n": 427,
+          "yaw_rmse_deg": 1.4705659291897388,
+          "yaw_mae_deg": 1.1597756646532846,
+          "signed_bias_deg": -0.4911059999327697,
+          "rotation_geodesic_rmse_deg": 3.0253261268385447,
+          "reference_mean_deg": 0.8611009849147929,
+          "prediction_mean_deg": 0.3699949849820234
+        },
+        "near_straight_abs_lt1": {
+          "n": 111,
+          "yaw_rmse_deg": 1.0784465581443596,
+          "yaw_mae_deg": 0.8546115755293293,
+          "signed_bias_deg": -0.4510624343917648,
+          "rotation_geodesic_rmse_deg": 2.7202820178995837,
+          "reference_mean_deg": 0.11455204556483657,
+          "prediction_mean_deg": -0.33651038882692735
+        },
+        "small_turn_1to3": {
+          "n": 160,
+          "yaw_rmse_deg": 1.3653499108966078,
+          "yaw_mae_deg": 1.0761639310756135,
+          "signed_bias_deg": -0.4490205341107057,
+          "rotation_geodesic_rmse_deg": 2.7913080944199375,
+          "reference_mean_deg": 0.529908905754544,
+          "prediction_mean_deg": 0.08088837164383796
+        },
+        "strong_turn_abs_ge3": {
+          "n": 156,
+          "yaw_rmse_deg": 1.7831976062006045,
+          "yaw_mae_deg": 1.4626672753275565,
+          "signed_bias_deg": -0.562763117282653,
+          "rotation_geodesic_rmse_deg": 3.4344993450608716,
+          "reference_mean_deg": 1.7319834524371323,
+          "prediction_mean_deg": 1.1692203351544794,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.1939417665352534
+        },
+        "positive_ge3": {
+          "n": 102,
+          "yaw_rmse_deg": 1.9405103454925565,
+          "yaw_mae_deg": 1.6077760817276465,
+          "signed_bias_deg": -1.3433625582136932,
+          "rotation_geodesic_rmse_deg": 3.3219210580851155,
+          "reference_mean_deg": 4.998889446202372,
+          "prediction_mean_deg": 3.6555268879886786,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.3433625582136932
+        },
+        "negative_le_minus3": {
+          "n": 54,
+          "yaw_rmse_deg": 1.4398985093620242,
+          "yaw_mae_deg": 1.1885728632384973,
+          "signed_bias_deg": 0.9117024933648676,
+          "rotation_geodesic_rmse_deg": 3.63765366620472,
+          "reference_mean_deg": -4.438838980230541,
+          "prediction_mean_deg": -3.5271364868656727,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 0.9117024933648672
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 427,
+          "yaw_rmse_deg": 2.364762333225444,
+          "yaw_mae_deg": 1.8518609934706929,
+          "signed_bias_deg": -0.8549243028466313,
+          "rotation_geodesic_rmse_deg": 3.5383384484533136,
+          "reference_mean_deg": 0.8611009849147929,
+          "prediction_mean_deg": 0.006176682068161984
+        },
+        "near_straight_abs_lt1": {
+          "n": 111,
+          "yaw_rmse_deg": 2.0526270022850497,
+          "yaw_mae_deg": 1.6382780111011463,
+          "signed_bias_deg": -0.67247401888103,
+          "rotation_geodesic_rmse_deg": 3.226027005321934,
+          "reference_mean_deg": 0.11455204556483657,
+          "prediction_mean_deg": -0.5579219733161933
+        },
+        "small_turn_1to3": {
+          "n": 160,
+          "yaw_rmse_deg": 2.0275370940267177,
+          "yaw_mae_deg": 1.6141559207848286,
+          "signed_bias_deg": -0.7981915108967179,
+          "rotation_geodesic_rmse_deg": 3.1467289280349515,
+          "reference_mean_deg": 0.529908905754544,
+          "prediction_mean_deg": -0.26828260514217367
+        },
+        "strong_turn_abs_ge3": {
+          "n": 156,
+          "yaw_rmse_deg": 2.8447074109006953,
+          "yaw_mae_deg": 2.2476335747063203,
+          "signed_bias_deg": -1.0429321761297585,
+          "rotation_geodesic_rmse_deg": 4.087553022228355,
+          "reference_mean_deg": 1.7319834524371323,
+          "prediction_mean_deg": 0.6890512763073738,
+          "direction_accuracy": 0.8974358974358975,
+          "signed_magnitude_shortfall_deg": 1.9659508455213746
+        },
+        "positive_ge3": {
+          "n": 102,
+          "yaw_rmse_deg": 3.1196838718216604,
+          "yaw_mae_deg": 2.5232853433074527,
+          "signed_bias_deg": -2.300910545968514,
+          "rotation_geodesic_rmse_deg": 4.124534848627714,
+          "reference_mean_deg": 4.998889446202372,
+          "prediction_mean_deg": 2.6979789002338577,
+          "direction_accuracy": 0.8627450980392157,
+          "signed_magnitude_shortfall_deg": 2.3009105459685135
+        },
+        "negative_le_minus3": {
+          "n": 54,
+          "yaw_rmse_deg": 2.2348278524977077,
+          "yaw_mae_deg": 1.7269580117930703,
+          "signed_bias_deg": 1.333249189121224,
+          "rotation_geodesic_rmse_deg": 4.016769587194231,
+          "reference_mean_deg": -4.438838980230541,
+          "prediction_mean_deg": -3.1055897911093173,
+          "direction_accuracy": 0.9629629629629629,
+          "signed_magnitude_shortfall_deg": 1.3332491891212228
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 427,
+          "yaw_rmse_deg": 3.2137547627325365,
+          "yaw_mae_deg": 2.4798268556842116,
+          "signed_bias_deg": -0.36309817490471663,
+          "rotation_geodesic_rmse_deg": 4.156533684807568,
+          "reference_mean_deg": 0.8611009849147929,
+          "prediction_mean_deg": 0.49800281001007624
+        },
+        "near_straight_abs_lt1": {
+          "n": 111,
+          "yaw_rmse_deg": 0.7556835762434846,
+          "yaw_mae_deg": 0.6004407974564521,
+          "signed_bias_deg": 0.36768789920234296,
+          "rotation_geodesic_rmse_deg": 2.6318105523906397,
+          "reference_mean_deg": 0.11455204556483657,
+          "prediction_mean_deg": 0.4822399447671806
+        },
+        "small_turn_1to3": {
+          "n": 160,
+          "yaw_rmse_deg": 1.9086431846453782,
+          "yaw_mae_deg": 1.7215679931200978,
+          "signed_bias_deg": -0.00471892203150297,
+          "rotation_geodesic_rmse_deg": 3.071435203031051,
+          "reference_mean_deg": 0.529908905754544,
+          "prediction_mean_deg": 0.5251899837230406
+        },
+        "strong_turn_abs_ge3": {
+          "n": 156,
+          "yaw_rmse_deg": 4.91197868058559,
+          "yaw_mae_deg": 4.594783717694079,
+          "signed_bias_deg": -1.2506490382739333,
+          "rotation_geodesic_rmse_deg": 5.71713243665674,
+          "reference_mean_deg": 1.7319834524371323,
+          "prediction_mean_deg": 0.4813344141631987,
+          "direction_accuracy": 0.6730769230769231,
+          "signed_magnitude_shortfall_deg": 4.594783717694081
+        },
+        "positive_ge3": {
+          "n": 102,
+          "yaw_rmse_deg": 4.896448942026224,
+          "yaw_mae_deg": 4.470036813387303,
+          "signed_bias_deg": -4.470036813387303,
+          "rotation_geodesic_rmse_deg": 5.592909791304697,
+          "reference_mean_deg": 4.998889446202372,
+          "prediction_mean_deg": 0.5288526328150666,
+          "direction_accuracy": 0.9313725490196079,
+          "signed_magnitude_shortfall_deg": 4.4700368133873045
+        },
+        "negative_le_minus3": {
+          "n": 54,
+          "yaw_rmse_deg": 4.94117946344714,
+          "yaw_mae_deg": 4.830416759162433,
+          "signed_bias_deg": 4.830416759162433,
+          "rotation_geodesic_rmse_deg": 5.944697047534285,
+          "reference_mean_deg": -4.438838980230541,
+          "prediction_mean_deg": 0.39157777893189294,
+          "direction_accuracy": 0.18518518518518517,
+          "signed_magnitude_shortfall_deg": 4.830416759162433
+        }
+      }
+    },
+    "2_22_2021_longboard_run7": {
+      "yaw_warmup": {
+        "all": {
+          "n": 1122,
+          "yaw_rmse_deg": 2.05907632673869,
+          "yaw_mae_deg": 1.5502970724168095,
+          "signed_bias_deg": -0.5655924861678188,
+          "rotation_geodesic_rmse_deg": 2.712762546468075,
+          "reference_mean_deg": 0.1231086174118301,
+          "prediction_mean_deg": -0.4424838687559892
+        },
+        "near_straight_abs_lt1": {
+          "n": 474,
+          "yaw_rmse_deg": 1.1775872704229249,
+          "yaw_mae_deg": 0.8380241526715484,
+          "signed_bias_deg": -0.3362470497838235,
+          "rotation_geodesic_rmse_deg": 1.943022937647092,
+          "reference_mean_deg": -0.04133309738533048,
+          "prediction_mean_deg": -0.3775801471691543
+        },
+        "small_turn_1to3": {
+          "n": 425,
+          "yaw_rmse_deg": 2.0539753199425443,
+          "yaw_mae_deg": 1.6904375424878029,
+          "signed_bias_deg": -0.6464962066289155,
+          "rotation_geodesic_rmse_deg": 2.631520315698941,
+          "reference_mean_deg": 0.10879116496139918,
+          "prediction_mean_deg": -0.5377050416675171
+        },
+        "strong_turn_abs_ge3": {
+          "n": 223,
+          "yaw_rmse_deg": 3.2162373592515014,
+          "yaw_mae_deg": 2.797192427479955,
+          "signed_bias_deg": -0.8988913904281224,
+          "rotation_geodesic_rmse_deg": 3.9754267876853437,
+          "reference_mean_deg": 0.4999260618301587,
+          "prediction_mean_deg": -0.3989653285979639,
+          "direction_accuracy": 0.8475336322869955,
+          "signed_magnitude_shortfall_deg": 2.675907630899902
+        },
+        "positive_ge3": {
+          "n": 125,
+          "yaw_rmse_deg": 3.6277205111096658,
+          "yaw_mae_deg": 3.2643834826243103,
+          "signed_bias_deg": -3.1887207270245965,
+          "rotation_geodesic_rmse_deg": 4.296970779680558,
+          "reference_mean_deg": 5.001155093274151,
+          "prediction_mean_deg": 1.812434366249554,
+          "direction_accuracy": 0.736,
+          "signed_magnitude_shortfall_deg": 3.1887207270245987
+        },
+        "negative_le_minus3": {
+          "n": 98,
+          "yaw_rmse_deg": 2.5984851162574563,
+          "yaw_mae_deg": 2.2012854693876647,
+          "signed_bias_deg": 2.0218092940061565,
+          "rotation_geodesic_rmse_deg": 3.522958680885702,
+          "reference_mean_deg": -5.241437498685139,
+          "prediction_mean_deg": -3.2196282046789824,
+          "direction_accuracy": 0.9897959183673469,
+          "signed_magnitude_shortfall_deg": 2.0218092940061574
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 1122,
+          "yaw_rmse_deg": 2.2404246408710558,
+          "yaw_mae_deg": 1.6509798168072842,
+          "signed_bias_deg": -0.31247030638569245,
+          "rotation_geodesic_rmse_deg": 2.857600729391866,
+          "reference_mean_deg": 0.1231086174118301,
+          "prediction_mean_deg": -0.18936168897386238
+        },
+        "near_straight_abs_lt1": {
+          "n": 474,
+          "yaw_rmse_deg": 1.3828464320970726,
+          "yaw_mae_deg": 1.0582285233722668,
+          "signed_bias_deg": -0.320559755861348,
+          "rotation_geodesic_rmse_deg": 2.064357882481418,
+          "reference_mean_deg": -0.04133309738533048,
+          "prediction_mean_deg": -0.3618928532466786
+        },
+        "small_turn_1to3": {
+          "n": 425,
+          "yaw_rmse_deg": 1.9482039810054421,
+          "yaw_mae_deg": 1.5196509670889944,
+          "signed_bias_deg": -0.2518025261697026,
+          "rotation_geodesic_rmse_deg": 2.540252065145453,
+          "reference_mean_deg": 0.10879116496139918,
+          "prediction_mean_deg": -0.14301136120830354
+        },
+        "strong_turn_abs_ge3": {
+          "n": 223,
+          "yaw_rmse_deg": 3.7358892416350233,
+          "yaw_mae_deg": 3.1611989837062593,
+          "signed_bias_deg": -0.4108981428894368,
+          "rotation_geodesic_rmse_deg": 4.441780570998148,
+          "reference_mean_deg": 0.4999260618301587,
+          "prediction_mean_deg": 0.0890279189407224,
+          "direction_accuracy": 0.8340807174887892,
+          "signed_magnitude_shortfall_deg": 3.032882677360294
+        },
+        "positive_ge3": {
+          "n": 125,
+          "yaw_rmse_deg": 3.818585107957433,
+          "yaw_mae_deg": 3.259157143045994,
+          "signed_bias_deg": -3.0718524916627588,
+          "rotation_geodesic_rmse_deg": 4.477457224107262,
+          "reference_mean_deg": 5.001155093274151,
+          "prediction_mean_deg": 1.9293026016113932,
+          "direction_accuracy": 0.84,
+          "signed_magnitude_shortfall_deg": 3.0718524916627583
+        },
+        "negative_le_minus3": {
+          "n": 98,
+          "yaw_rmse_deg": 3.6276751291867306,
+          "yaw_mae_deg": 3.036252351895373,
+          "signed_bias_deg": 2.983176281566332,
+          "rotation_geodesic_rmse_deg": 4.395854454455556,
+          "reference_mean_deg": -5.241437498685139,
+          "prediction_mean_deg": -2.2582612171188057,
+          "direction_accuracy": 0.826530612244898,
+          "signed_magnitude_shortfall_deg": 2.983176281566333
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 1122,
+          "yaw_rmse_deg": 2.754830575041083,
+          "yaw_mae_deg": 1.8854390536565377,
+          "signed_bias_deg": -0.22133454146186493,
+          "rotation_geodesic_rmse_deg": 3.2855879130411743,
+          "reference_mean_deg": 0.1231086174118301,
+          "prediction_mean_deg": -0.09822592405003475
+        },
+        "near_straight_abs_lt1": {
+          "n": 474,
+          "yaw_rmse_deg": 0.6215002478184515,
+          "yaw_mae_deg": 0.5162071080095445,
+          "signed_bias_deg": -0.08909876535104515,
+          "rotation_geodesic_rmse_deg": 1.6690347049336747,
+          "reference_mean_deg": -0.04133309738533048,
+          "prediction_mean_deg": -0.13043186273637541
+        },
+        "small_turn_1to3": {
+          "n": 425,
+          "yaw_rmse_deg": 1.8633667233692437,
+          "yaw_mae_deg": 1.740063192440679,
+          "signed_bias_deg": -0.2409934261734298,
+          "rotation_geodesic_rmse_deg": 2.4881495243795957,
+          "reference_mean_deg": 0.10879116496139918,
+          "prediction_mean_deg": -0.13220226121203113
+        },
+        "strong_turn_abs_ge3": {
+          "n": 223,
+          "yaw_rmse_deg": 5.544849587894419,
+          "yaw_mae_deg": 5.072886063761536,
+          "signed_bias_deg": -0.4649432045744815,
+          "rotation_geodesic_rmse_deg": 6.0493302499670945,
+          "reference_mean_deg": 0.4999260618301587,
+          "prediction_mean_deg": 0.03498285725567797,
+          "direction_accuracy": 0.5426008968609866,
+          "signed_magnitude_shortfall_deg": 5.072886063761536
+        },
+        "positive_ge3": {
+          "n": 125,
+          "yaw_rmse_deg": 5.501965932935073,
+          "yaw_mae_deg": 4.939743707355729,
+          "signed_bias_deg": -4.939743707355729,
+          "rotation_geodesic_rmse_deg": 5.997799682414216,
+          "reference_mean_deg": 5.001155093274151,
+          "prediction_mean_deg": 0.061411385918424766,
+          "direction_accuracy": 0.592,
+          "signed_magnitude_shortfall_deg": 4.939743707355729
+        },
+        "negative_le_minus3": {
+          "n": 98,
+          "yaw_rmse_deg": 5.599071496897165,
+          "yaw_mae_deg": 5.242710497952619,
+          "signed_bias_deg": 5.242710497952619,
+          "rotation_geodesic_rmse_deg": 6.11442780602603,
+          "reference_mean_deg": -5.241437498685139,
+          "prediction_mean_deg": 0.0012729992674805485,
+          "direction_accuracy": 0.47959183673469385,
+          "signed_magnitude_shortfall_deg": 5.242710497952619
+        }
+      }
+    },
+    "2_23_2021_edgar_army_run5": {
+      "yaw_warmup": {
+        "all": {
+          "n": 482,
+          "yaw_rmse_deg": 1.7582968184333596,
+          "yaw_mae_deg": 1.302326428667292,
+          "signed_bias_deg": -0.32748018481099644,
+          "rotation_geodesic_rmse_deg": 3.6263455880739506,
+          "reference_mean_deg": 1.4542671318936484,
+          "prediction_mean_deg": 1.1267869470826517
+        },
+        "near_straight_abs_lt1": {
+          "n": 98,
+          "yaw_rmse_deg": 1.1973290229516933,
+          "yaw_mae_deg": 0.9210195735943774,
+          "signed_bias_deg": -0.12602856104315055,
+          "rotation_geodesic_rmse_deg": 3.1642198111986524,
+          "reference_mean_deg": 0.025402227853335135,
+          "prediction_mean_deg": -0.1006263331898152
+        },
+        "small_turn_1to3": {
+          "n": 178,
+          "yaw_rmse_deg": 1.3398153401086377,
+          "yaw_mae_deg": 1.0576653623208139,
+          "signed_bias_deg": -0.3145396973696544,
+          "rotation_geodesic_rmse_deg": 3.4569868661517873,
+          "reference_mean_deg": 0.3754125773200636,
+          "prediction_mean_deg": 0.0608728799504082
+        },
+        "strong_turn_abs_ge3": {
+          "n": 206,
+          "yaw_rmse_deg": 2.236213112020449,
+          "yaw_mae_deg": 1.695130999574179,
+          "signed_bias_deg": -0.43449798041200505,
+          "rotation_geodesic_rmse_deg": 3.9597766403844643,
+          "reference_mean_deg": 3.0662325266026236,
+          "prediction_mean_deg": 2.6317345461906183,
+          "direction_accuracy": 0.9805825242718447,
+          "signed_magnitude_shortfall_deg": 1.4388742848569378
+        },
+        "positive_ge3": {
+          "n": 141,
+          "yaw_rmse_deg": 2.1379825289655345,
+          "yaw_mae_deg": 1.6566378875392354,
+          "signed_bias_deg": -1.3684917966149013,
+          "rotation_geodesic_rmse_deg": 3.6124020523840255,
+          "reference_mean_deg": 6.954216653233154,
+          "prediction_mean_deg": 5.585724856618254,
+          "direction_accuracy": 0.9858156028368794,
+          "signed_magnitude_shortfall_deg": 1.3684917966149013
+        },
+        "negative_le_minus3": {
+          "n": 65,
+          "yaw_rmse_deg": 2.435718312916042,
+          "yaw_mae_deg": 1.7786314426038254,
+          "signed_bias_deg": 1.5915501439665853,
+          "rotation_geodesic_rmse_deg": 4.62447160171536,
+          "reference_mean_deg": -5.367702271165144,
+          "prediction_mean_deg": -3.776152127198559,
+          "direction_accuracy": 0.9692307692307692,
+          "signed_magnitude_shortfall_deg": 1.5915501439665853
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 482,
+          "yaw_rmse_deg": 2.7542914401996836,
+          "yaw_mae_deg": 1.9436900440145113,
+          "signed_bias_deg": -0.5357396603309877,
+          "rotation_geodesic_rmse_deg": 4.215856033824283,
+          "reference_mean_deg": 1.4542671318936484,
+          "prediction_mean_deg": 0.918527471562661
+        },
+        "near_straight_abs_lt1": {
+          "n": 98,
+          "yaw_rmse_deg": 1.5312766508894111,
+          "yaw_mae_deg": 1.2475297240425882,
+          "signed_bias_deg": 0.11306971595616648,
+          "rotation_geodesic_rmse_deg": 3.327056275623745,
+          "reference_mean_deg": 0.025402227853335135,
+          "prediction_mean_deg": 0.1384719438095025
+        },
+        "small_turn_1to3": {
+          "n": 178,
+          "yaw_rmse_deg": 1.7988408101251938,
+          "yaw_mae_deg": 1.4270316503451923,
+          "signed_bias_deg": -0.26850134984421475,
+          "rotation_geodesic_rmse_deg": 3.650556775299565,
+          "reference_mean_deg": 0.3754125773200636,
+          "prediction_mean_deg": 0.10691122747584887
+        },
+        "strong_turn_abs_ge3": {
+          "n": 206,
+          "yaw_rmse_deg": 3.72002052178754,
+          "yaw_mae_deg": 2.721306089793091,
+          "signed_bias_deg": -1.0753112047134474,
+          "rotation_geodesic_rmse_deg": 4.98048561938282,
+          "reference_mean_deg": 3.0662325266026236,
+          "prediction_mean_deg": 1.9909213218891761,
+          "direction_accuracy": 0.9611650485436893,
+          "signed_magnitude_shortfall_deg": 2.4523540596972513
+        },
+        "positive_ge3": {
+          "n": 141,
+          "yaw_rmse_deg": 3.672398379725251,
+          "yaw_mae_deg": 2.8025150175483238,
+          "signed_bias_deg": -2.5769469662007225,
+          "rotation_geodesic_rmse_deg": 4.7444822252498335,
+          "reference_mean_deg": 6.954216653233154,
+          "prediction_mean_deg": 4.377269687032432,
+          "direction_accuracy": 0.9787234042553191,
+          "signed_magnitude_shortfall_deg": 2.576946966200723
+        },
+        "negative_le_minus3": {
+          "n": 65,
+          "yaw_rmse_deg": 3.821284444594698,
+          "yaw_mae_deg": 2.5451451849702,
+          "signed_bias_deg": 2.1820832932820267,
+          "rotation_geodesic_rmse_deg": 5.457462201736336,
+          "reference_mean_deg": -5.367702271165144,
+          "prediction_mean_deg": -3.1856189778831174,
+          "direction_accuracy": 0.9230769230769231,
+          "signed_magnitude_shortfall_deg": 2.1820832932820275
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 482,
+          "yaw_rmse_deg": 4.7995946119174056,
+          "yaw_mae_deg": 3.4462172184920083,
+          "signed_bias_deg": -1.0480814756361319,
+          "rotation_geodesic_rmse_deg": 5.7565327413537934,
+          "reference_mean_deg": 1.4542671318936484,
+          "prediction_mean_deg": 0.4061856562575169
+        },
+        "near_straight_abs_lt1": {
+          "n": 98,
+          "yaw_rmse_deg": 0.720327547725326,
+          "yaw_mae_deg": 0.5851921010225161,
+          "signed_bias_deg": 0.41598312272820026,
+          "rotation_geodesic_rmse_deg": 3.0427932211656907,
+          "reference_mean_deg": 0.025402227853335135,
+          "prediction_mean_deg": 0.4413853505815356
+        },
+        "small_turn_1to3": {
+          "n": 178,
+          "yaw_rmse_deg": 1.9275175899344394,
+          "yaw_mae_deg": 1.7842849902924103,
+          "signed_bias_deg": 0.09086767455337084,
+          "rotation_geodesic_rmse_deg": 3.685665565829182,
+          "reference_mean_deg": 0.3754125773200636,
+          "prediction_mean_deg": 0.466280251873434
+        },
+        "strong_turn_abs_ge3": {
+          "n": 206,
+          "yaw_rmse_deg": 7.102313020894629,
+          "yaw_mae_deg": 6.243325947285886,
+          "signed_bias_deg": -2.728718754147957,
+          "rotation_geodesic_rmse_deg": 7.835393751593057,
+          "reference_mean_deg": 3.0662325266026236,
+          "prediction_mean_deg": 0.33751377245466696,
+          "direction_accuracy": 0.6650485436893204,
+          "signed_magnitude_shortfall_deg": 6.243325947285886
+        },
+        "positive_ge3": {
+          "n": 141,
+          "yaw_rmse_deg": 7.478169550345106,
+          "yaw_mae_deg": 6.5540468386360695,
+          "signed_bias_deg": -6.5540468386360695,
+          "rotation_geodesic_rmse_deg": 8.059930682735777,
+          "reference_mean_deg": 6.954216653233154,
+          "prediction_mean_deg": 0.4001698145970857,
+          "direction_accuracy": 0.8297872340425532,
+          "signed_magnitude_shortfall_deg": 6.554046838636069
+        },
+        "negative_le_minus3": {
+          "n": 65,
+          "yaw_rmse_deg": 6.209275141260066,
+          "yaw_mae_deg": 5.569300629126257,
+          "signed_bias_deg": 5.569300629126257,
+          "rotation_geodesic_rmse_deg": 7.324699386716188,
+          "reference_mean_deg": -5.367702271165144,
+          "prediction_mean_deg": 0.20159835796111217,
+          "direction_accuracy": 0.3076923076923077,
+          "signed_magnitude_shortfall_deg": 5.569300629126258
+        }
+      }
+    },
+    "2_23_2021_edgar_classroom_run5": {
+      "yaw_warmup": {
+        "all": {
+          "n": 764,
+          "yaw_rmse_deg": 2.0335863532310134,
+          "yaw_mae_deg": 1.6298585567789454,
+          "signed_bias_deg": 0.23869290185388822,
+          "rotation_geodesic_rmse_deg": 4.5349828555339355,
+          "reference_mean_deg": -0.07520326200163406,
+          "prediction_mean_deg": 0.1634896398522542
+        },
+        "near_straight_abs_lt1": {
+          "n": 137,
+          "yaw_rmse_deg": 1.4630504652233116,
+          "yaw_mae_deg": 1.1929844236171185,
+          "signed_bias_deg": 0.008015915095234796,
+          "rotation_geodesic_rmse_deg": 4.250169316510416,
+          "reference_mean_deg": -7.111655199824438e-05,
+          "prediction_mean_deg": 0.007944798543236688
+        },
+        "small_turn_1to3": {
+          "n": 264,
+          "yaw_rmse_deg": 1.6102763694033242,
+          "yaw_mae_deg": 1.2897589307005488,
+          "signed_bias_deg": -0.0663001632345634,
+          "rotation_geodesic_rmse_deg": 4.193543367182022,
+          "reference_mean_deg": -0.08230922933937179,
+          "prediction_mean_deg": -0.1486093925739353
+        },
+        "strong_turn_abs_ge3": {
+          "n": 363,
+          "yaw_rmse_deg": 2.451570352534824,
+          "yaw_mae_deg": 2.0420846105747223,
+          "signed_bias_deg": 0.547565949703163,
+          "rotation_geodesic_rmse_deg": 4.865990551244526,
+          "reference_mean_deg": -0.09839094395600688,
+          "prediction_mean_deg": 0.4491750057471562,
+          "direction_accuracy": 0.9862258953168044,
+          "signed_magnitude_shortfall_deg": 1.5970889007823716
+        },
+        "positive_ge3": {
+          "n": 175,
+          "yaw_rmse_deg": 2.238845635840725,
+          "yaw_mae_deg": 1.849891831246447,
+          "signed_bias_deg": -1.0885052321192925,
+          "rotation_geodesic_rmse_deg": 4.728980191388604,
+          "reference_mean_deg": 5.6411146922313975,
+          "prediction_mean_deg": 4.552609460112103,
+          "direction_accuracy": 0.9885714285714285,
+          "signed_magnitude_shortfall_deg": 1.088505232119293
+        },
+        "negative_le_minus3": {
+          "n": 188,
+          "yaw_rmse_deg": 2.634192485492699,
+          "yaw_mae_deg": 2.2209874636728504,
+          "signed_bias_deg": 2.070504549803853,
+          "rotation_geodesic_rmse_deg": 4.990147345401252,
+          "reference_mean_deg": -5.441015871258112,
+          "prediction_mean_deg": -3.370511321454258,
+          "direction_accuracy": 0.9840425531914894,
+          "signed_magnitude_shortfall_deg": 2.070504549803854
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 764,
+          "yaw_rmse_deg": 2.396660222500396,
+          "yaw_mae_deg": 1.8547400342945657,
+          "signed_bias_deg": 0.04039689597298555,
+          "rotation_geodesic_rmse_deg": 4.7222687742748395,
+          "reference_mean_deg": -0.07520326200163406,
+          "prediction_mean_deg": -0.03480636602864852
+        },
+        "near_straight_abs_lt1": {
+          "n": 137,
+          "yaw_rmse_deg": 1.923489766657057,
+          "yaw_mae_deg": 1.4976656633354357,
+          "signed_bias_deg": 0.047374018083599784,
+          "rotation_geodesic_rmse_deg": 4.432521773082354,
+          "reference_mean_deg": -7.111655199824438e-05,
+          "prediction_mean_deg": 0.04730290153160144
+        },
+        "small_turn_1to3": {
+          "n": 264,
+          "yaw_rmse_deg": 1.9677369405733744,
+          "yaw_mae_deg": 1.5725672289859516,
+          "signed_bias_deg": 0.05088523208026282,
+          "rotation_geodesic_rmse_deg": 4.344348202649047,
+          "reference_mean_deg": -0.08230922933937179,
+          "prediction_mean_deg": -0.031423997259109264
+        },
+        "strong_turn_abs_ge3": {
+          "n": 363,
+          "yaw_rmse_deg": 2.806584896028039,
+          "yaw_mae_deg": 2.194720225542155,
+          "signed_bias_deg": 0.030135776244403317,
+          "rotation_geodesic_rmse_deg": 5.078671373797484,
+          "reference_mean_deg": -0.09839094395600688,
+          "prediction_mean_deg": -0.06825516771160346,
+          "direction_accuracy": 0.9559228650137741,
+          "signed_magnitude_shortfall_deg": 1.8338852034617108
+        },
+        "positive_ge3": {
+          "n": 175,
+          "yaw_rmse_deg": 2.9697410444169443,
+          "yaw_mae_deg": 2.268257061055954,
+          "signed_bias_deg": -1.8707458345139496,
+          "rotation_geodesic_rmse_deg": 5.140170841404754,
+          "reference_mean_deg": 5.6411146922313975,
+          "prediction_mean_deg": 3.7703688577174463,
+          "direction_accuracy": 0.9428571428571428,
+          "signed_magnitude_shortfall_deg": 1.87074583451395
+        },
+        "negative_le_minus3": {
+          "n": 188,
+          "yaw_rmse_deg": 2.6456841503783197,
+          "yaw_mae_deg": 2.1262683839734597,
+          "signed_bias_deg": 1.7995734458332957,
+          "rotation_geodesic_rmse_deg": 5.020747598537332,
+          "reference_mean_deg": -5.441015871258112,
+          "prediction_mean_deg": -3.6414424254248154,
+          "direction_accuracy": 0.9680851063829787,
+          "signed_magnitude_shortfall_deg": 1.7995734458332964
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 764,
+          "yaw_rmse_deg": 4.196420662817183,
+          "yaw_mae_deg": 3.3178457991983774,
+          "signed_bias_deg": 0.5124167781191225,
+          "rotation_geodesic_rmse_deg": 5.839672639029928,
+          "reference_mean_deg": -0.07520326200163406,
+          "prediction_mean_deg": 0.43721351611748877
+        },
+        "near_straight_abs_lt1": {
+          "n": 137,
+          "yaw_rmse_deg": 0.790490029422477,
+          "yaw_mae_deg": 0.6461778161127438,
+          "signed_bias_deg": 0.46706672184825265,
+          "rotation_geodesic_rmse_deg": 4.070910509365831,
+          "reference_mean_deg": -7.111655199824438e-05,
+          "prediction_mean_deg": 0.4669956052962548
+        },
+        "small_turn_1to3": {
+          "n": 264,
+          "yaw_rmse_deg": 2.0521903685542595,
+          "yaw_mae_deg": 1.8798387194325024,
+          "signed_bias_deg": 0.5511268226949216,
+          "rotation_geodesic_rmse_deg": 4.393226944178527,
+          "reference_mean_deg": -0.08230922933937179,
+          "prediction_mean_deg": 0.46881759335555034
+        },
+        "strong_turn_abs_ge3": {
+          "n": 363,
+          "yaw_rmse_deg": 5.810733657706974,
+          "yaw_mae_deg": 5.371984594627916,
+          "signed_bias_deg": 0.5013796044031392,
+          "rotation_geodesic_rmse_deg": 7.175108781347247,
+          "reference_mean_deg": -0.09839094395600688,
+          "prediction_mean_deg": 0.4029886604471331,
+          "direction_accuracy": 0.628099173553719,
+          "signed_magnitude_shortfall_deg": 5.371984594627917
+        },
+        "positive_ge3": {
+          "n": 175,
+          "yaw_rmse_deg": 5.603435813049805,
+          "yaw_mae_deg": 5.051513175575983,
+          "signed_bias_deg": -5.051513175575983,
+          "rotation_geodesic_rmse_deg": 6.992513471359208,
+          "reference_mean_deg": 5.6411146922313975,
+          "prediction_mean_deg": 0.5896015166554144,
+          "direction_accuracy": 0.9542857142857143,
+          "signed_magnitude_shortfall_deg": 5.051513175575982
+        },
+        "negative_le_minus3": {
+          "n": 188,
+          "yaw_rmse_deg": 5.997261275744313,
+          "yaw_mae_deg": 5.67029575597945,
+          "signed_bias_deg": 5.67029575597945,
+          "rotation_geodesic_rmse_deg": 7.34099742249217,
+          "reference_mean_deg": -5.441015871258112,
+          "prediction_mean_deg": 0.2292798847213393,
+          "direction_accuracy": 0.324468085106383,
+          "signed_magnitude_shortfall_deg": 5.67029575597945
+        }
+      }
+    },
+    "2_24_2021_aspen_run11": {
+      "yaw_warmup": {
+        "all": {
+          "n": 509,
+          "yaw_rmse_deg": 1.5252986873776915,
+          "yaw_mae_deg": 1.1931125312559745,
+          "signed_bias_deg": 0.04871296761783413,
+          "rotation_geodesic_rmse_deg": 2.7887877997904504,
+          "reference_mean_deg": -0.02548859603732978,
+          "prediction_mean_deg": 0.02322437158050446
+        },
+        "near_straight_abs_lt1": {
+          "n": 93,
+          "yaw_rmse_deg": 1.1146267238424354,
+          "yaw_mae_deg": 0.828157709509208,
+          "signed_bias_deg": -0.46801752452261564,
+          "rotation_geodesic_rmse_deg": 2.4355362670495877,
+          "reference_mean_deg": -0.054130000883355116,
+          "prediction_mean_deg": -0.52214752540597
+        },
+        "small_turn_1to3": {
+          "n": 143,
+          "yaw_rmse_deg": 1.2266557206763262,
+          "yaw_mae_deg": 0.9637947787425447,
+          "signed_bias_deg": -0.10207364047888386,
+          "rotation_geodesic_rmse_deg": 2.523223514791431,
+          "reference_mean_deg": -0.3542519438502788,
+          "prediction_mean_deg": -0.45632558432916287
+        },
+        "strong_turn_abs_ge3": {
+          "n": 273,
+          "yaw_rmse_deg": 1.768149727898393,
+          "yaw_mae_deg": 1.437556622947805,
+          "signed_bias_deg": 0.3037254977529715,
+          "rotation_geodesic_rmse_deg": 3.024062209072835,
+          "reference_mean_deg": 0.15647773871699985,
+          "prediction_mean_deg": 0.46020323646997197,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.0850190204088908
+        },
+        "positive_ge3": {
+          "n": 132,
+          "yaw_rmse_deg": 1.5948227624678368,
+          "yaw_mae_deg": 1.2954654729605033,
+          "signed_bias_deg": -0.807928529110098,
+          "rotation_geodesic_rmse_deg": 3.0570361468428557,
+          "reference_mean_deg": 6.5939747038167695,
+          "prediction_mean_deg": 5.78604617470667,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 0.8079285291100978
+        },
+        "negative_le_minus3": {
+          "n": 141,
+          "yaw_rmse_deg": 1.916257103980658,
+          "yaw_mae_deg": 1.5705781250635769,
+          "signed_bias_deg": 1.3444228846035047,
+          "rotation_geodesic_rmse_deg": 2.9928637609252315,
+          "reference_mean_deg": -5.870115164780657,
+          "prediction_mean_deg": -4.525692280177151,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.3444228846035051
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 509,
+          "yaw_rmse_deg": 2.7968034745004227,
+          "yaw_mae_deg": 2.216854418446554,
+          "signed_bias_deg": 0.6360255507223131,
+          "rotation_geodesic_rmse_deg": 3.6580036209605,
+          "reference_mean_deg": -0.02548859603732978,
+          "prediction_mean_deg": 0.6105369546849835
+        },
+        "near_straight_abs_lt1": {
+          "n": 93,
+          "yaw_rmse_deg": 2.1055191017398354,
+          "yaw_mae_deg": 1.6914853829741276,
+          "signed_bias_deg": 0.8226487727490703,
+          "rotation_geodesic_rmse_deg": 3.029049929199532,
+          "reference_mean_deg": -0.054130000883355116,
+          "prediction_mean_deg": 0.7685187718657156
+        },
+        "small_turn_1to3": {
+          "n": 143,
+          "yaw_rmse_deg": 2.2582344784988155,
+          "yaw_mae_deg": 1.8276633347204612,
+          "signed_bias_deg": 0.8644324834597598,
+          "rotation_geodesic_rmse_deg": 3.1478050516861176,
+          "reference_mean_deg": -0.3542519438502788,
+          "prediction_mean_deg": 0.5101805396094811
+        },
+        "strong_turn_abs_ge3": {
+          "n": 273,
+          "yaw_rmse_deg": 3.2253114949297927,
+          "yaw_mae_deg": 2.599688283910902,
+          "signed_bias_deg": 0.4528088802829604,
+          "rotation_geodesic_rmse_deg": 4.078306342810764,
+          "reference_mean_deg": 0.15647773871699985,
+          "prediction_mean_deg": 0.6092866189999607,
+          "direction_accuracy": 0.9706959706959707,
+          "signed_magnitude_shortfall_deg": 2.231747528519513
+        },
+        "positive_ge3": {
+          "n": 132,
+          "yaw_rmse_deg": 3.050690913949684,
+          "yaw_mae_deg": 2.358464804455576,
+          "signed_bias_deg": -1.8395842839718892,
+          "rotation_geodesic_rmse_deg": 4.066590395008747,
+          "reference_mean_deg": 6.5939747038167695,
+          "prediction_mean_deg": 4.754390419844881,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.8395842839718892
+        },
+        "negative_le_minus3": {
+          "n": 141,
+          "yaw_rmse_deg": 3.380621412946689,
+          "yaw_mae_deg": 2.825514519996739,
+          "signed_bias_deg": 2.5988790766066496,
+          "rotation_geodesic_rmse_deg": 4.089244042801335,
+          "reference_mean_deg": -5.870115164780657,
+          "prediction_mean_deg": -3.2712360881740064,
+          "direction_accuracy": 0.9432624113475178,
+          "signed_magnitude_shortfall_deg": 2.59887907660665
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 509,
+          "yaw_rmse_deg": 4.939749856450233,
+          "yaw_mae_deg": 3.8780889077935616,
+          "signed_bias_deg": 0.0591196347073393,
+          "rotation_geodesic_rmse_deg": 5.454170163222703,
+          "reference_mean_deg": -0.02548859603732978,
+          "prediction_mean_deg": 0.033631038670009286
+        },
+        "near_straight_abs_lt1": {
+          "n": 93,
+          "yaw_rmse_deg": 0.6065751337943097,
+          "yaw_mae_deg": 0.497772163591155,
+          "signed_bias_deg": 0.03900378788379964,
+          "rotation_geodesic_rmse_deg": 2.282811347339977,
+          "reference_mean_deg": -0.054130000883355116,
+          "prediction_mean_deg": -0.015126212999556275
+        },
+        "small_turn_1to3": {
+          "n": 143,
+          "yaw_rmse_deg": 1.9950540065166416,
+          "yaw_mae_deg": 1.8838409837021715,
+          "signed_bias_deg": 0.5027669285715191,
+          "rotation_geodesic_rmse_deg": 2.9667173502438717,
+          "reference_mean_deg": -0.3542519438502788,
+          "prediction_mean_deg": 0.14851498472124003
+        },
+        "strong_turn_abs_ge3": {
+          "n": 273,
+          "yaw_rmse_deg": 6.5791273580167635,
+          "yaw_mae_deg": 6.074231436569725,
+          "signed_bias_deg": -0.1664143919153291,
+          "rotation_geodesic_rmse_deg": 7.0056156884089935,
+          "reference_mean_deg": 0.15647773871699985,
+          "prediction_mean_deg": -0.009936653198329193,
+          "direction_accuracy": 0.6227106227106227,
+          "signed_magnitude_shortfall_deg": 6.0742314365697245
+        },
+        "positive_ge3": {
+          "n": 132,
+          "yaw_rmse_deg": 7.016792317581827,
+          "yaw_mae_deg": 6.4533951180925,
+          "signed_bias_deg": -6.4533951180925,
+          "rotation_geodesic_rmse_deg": 7.46993988023801,
+          "reference_mean_deg": 6.5939747038167695,
+          "prediction_mean_deg": 0.14057958572427035,
+          "direction_accuracy": 0.6363636363636364,
+          "signed_magnitude_shortfall_deg": 6.453395118092498
+        },
+        "negative_le_minus3": {
+          "n": 141,
+          "yaw_rmse_deg": 6.141194965373243,
+          "yaw_mae_deg": 5.719269692165426,
+          "signed_bias_deg": 5.719269692165426,
+          "rotation_geodesic_rmse_deg": 6.541125508222164,
+          "reference_mean_deg": -5.870115164780657,
+          "prediction_mean_deg": -0.15084547261523093,
+          "direction_accuracy": 0.6099290780141844,
+          "signed_magnitude_shortfall_deg": 5.719269692165426
+        }
+      }
+    },
+    "2_28_2021_outdoors_run8": {
+      "yaw_warmup": {
+        "all": {
+          "n": 467,
+          "yaw_rmse_deg": 1.7234463112475107,
+          "yaw_mae_deg": 1.3462743511974462,
+          "signed_bias_deg": 0.1610942562196053,
+          "rotation_geodesic_rmse_deg": 3.0228540854925865,
+          "reference_mean_deg": -0.75833343585876,
+          "prediction_mean_deg": -0.5972391796391543
+        },
+        "near_straight_abs_lt1": {
+          "n": 114,
+          "yaw_rmse_deg": 1.2283244234656447,
+          "yaw_mae_deg": 0.9934843484089917,
+          "signed_bias_deg": -0.15526180027756714,
+          "rotation_geodesic_rmse_deg": 2.8569052351081203,
+          "reference_mean_deg": -0.05310309858630747,
+          "prediction_mean_deg": -0.20836489886387427
+        },
+        "small_turn_1to3": {
+          "n": 203,
+          "yaw_rmse_deg": 1.3170722288333816,
+          "yaw_mae_deg": 1.0387650207526171,
+          "signed_bias_deg": 0.03930051542767114,
+          "rotation_geodesic_rmse_deg": 2.629197255511918,
+          "reference_mean_deg": -0.22800075952758111,
+          "prediction_mean_deg": -0.18870024409990963
+        },
+        "strong_turn_abs_ge3": {
+          "n": 150,
+          "yaw_rmse_deg": 2.398574390954758,
+          "yaw_mae_deg": 2.030557380518674,
+          "signed_bias_deg": 0.5663523883625405,
+          "rotation_geodesic_rmse_deg": 3.5903109726985947,
+          "reference_mean_deg": -2.012025380820686,
+          "prediction_mean_deg": -1.4456729924581448,
+          "direction_accuracy": 0.9666666666666667,
+          "signed_magnitude_shortfall_deg": 1.9221414480711303
+        },
+        "positive_ge3": {
+          "n": 51,
+          "yaw_rmse_deg": 2.4770246429009743,
+          "yaw_mae_deg": 2.1907963916319133,
+          "signed_bias_deg": -1.9938074407479258,
+          "rotation_geodesic_rmse_deg": 3.6257009116823755,
+          "reference_mean_deg": 4.932327494806996,
+          "prediction_mean_deg": 2.938520054059071,
+          "direction_accuracy": 0.9803921568627451,
+          "signed_magnitude_shortfall_deg": 1.9938074407479252
+        },
+        "negative_le_minus3": {
+          "n": 99,
+          "yaw_rmse_deg": 2.357141868816667,
+          "yaw_mae_deg": 1.9480100111573075,
+          "signed_bias_deg": 1.8852226033588415,
+          "rotation_geodesic_rmse_deg": 3.5719429536548573,
+          "reference_mean_deg": -5.589419286447066,
+          "prediction_mean_deg": -3.704196683088226,
+          "direction_accuracy": 0.9595959595959596,
+          "signed_magnitude_shortfall_deg": 1.885222603358842
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 467,
+          "yaw_rmse_deg": 2.524085516856511,
+          "yaw_mae_deg": 1.971931488575221,
+          "signed_bias_deg": 0.5834266538445902,
+          "rotation_geodesic_rmse_deg": 3.5355592234228888,
+          "reference_mean_deg": -0.75833343585876,
+          "prediction_mean_deg": -0.17490678201417023
+        },
+        "near_straight_abs_lt1": {
+          "n": 114,
+          "yaw_rmse_deg": 1.7453554366553672,
+          "yaw_mae_deg": 1.403633052445343,
+          "signed_bias_deg": 0.34777325951140287,
+          "rotation_geodesic_rmse_deg": 3.1033993937564666,
+          "reference_mean_deg": -0.05310309858630747,
+          "prediction_mean_deg": 0.2946701609250953
+        },
+        "small_turn_1to3": {
+          "n": 203,
+          "yaw_rmse_deg": 1.9078622295582677,
+          "yaw_mae_deg": 1.520567892499786,
+          "signed_bias_deg": 0.25907110440743614,
+          "rotation_geodesic_rmse_deg": 2.9767945068740915,
+          "reference_mean_deg": -0.22800075952758111,
+          "prediction_mean_deg": 0.031070344879854266
+        },
+        "strong_turn_abs_ge3": {
+          "n": 150,
+          "yaw_rmse_deg": 3.5487827429840295,
+          "yaw_mae_deg": 3.0146837000560165,
+          "signed_bias_deg": 1.201484410442761,
+          "rotation_geodesic_rmse_deg": 4.4277869345845495,
+          "reference_mean_deg": -2.012025380820686,
+          "prediction_mean_deg": -0.8105409703779252,
+          "direction_accuracy": 0.8666666666666667,
+          "signed_magnitude_shortfall_deg": 2.9431018079063977
+        },
+        "positive_ge3": {
+          "n": 51,
+          "yaw_rmse_deg": 3.155883743495528,
+          "yaw_mae_deg": 2.6855688536594537,
+          "signed_bias_deg": -2.5612020550935837,
+          "rotation_geodesic_rmse_deg": 4.111578554607627,
+          "reference_mean_deg": 4.932327494806996,
+          "prediction_mean_deg": 2.371125439713413,
+          "direction_accuracy": 0.8627450980392157,
+          "signed_magnitude_shortfall_deg": 2.561202055093584
+        },
+        "negative_le_minus3": {
+          "n": 99,
+          "yaw_rmse_deg": 3.7350904025538814,
+          "yaw_mae_deg": 3.1842277118360647,
+          "signed_bias_deg": 3.139838044203908,
+          "rotation_geodesic_rmse_deg": 4.582174048391463,
+          "reference_mean_deg": -5.589419286447066,
+          "prediction_mean_deg": -2.4495812422431604,
+          "direction_accuracy": 0.8686868686868687,
+          "signed_magnitude_shortfall_deg": 3.139838044203908
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 467,
+          "yaw_rmse_deg": 3.594129282739521,
+          "yaw_mae_deg": 2.7523758604232413,
+          "signed_bias_deg": 1.228511458113669,
+          "rotation_geodesic_rmse_deg": 4.371549486340531,
+          "reference_mean_deg": -0.75833343585876,
+          "prediction_mean_deg": 0.47017802225490996
+        },
+        "near_straight_abs_lt1": {
+          "n": 114,
+          "yaw_rmse_deg": 0.8092521727445068,
+          "yaw_mae_deg": 0.6607450380497928,
+          "signed_bias_deg": 0.5341596365140687,
+          "rotation_geodesic_rmse_deg": 2.7166627970611854,
+          "reference_mean_deg": -0.05310309858630747,
+          "prediction_mean_deg": 0.48105653792776204
+        },
+        "small_turn_1to3": {
+          "n": 203,
+          "yaw_rmse_deg": 2.1064330892356837,
+          "yaw_mae_deg": 1.9543258437468964,
+          "signed_bias_deg": 0.7443648434043247,
+          "rotation_geodesic_rmse_deg": 3.115571214258691,
+          "reference_mean_deg": -0.22800075952758111,
+          "prediction_mean_deg": 0.5163640838767443
+        },
+        "strong_turn_abs_ge3": {
+          "n": 150,
+          "yaw_rmse_deg": 5.80644227710808,
+          "yaw_mae_deg": 5.422042974662381,
+          "signed_bias_deg": 2.4114305944360113,
+          "rotation_geodesic_rmse_deg": 6.3837039163013705,
+          "reference_mean_deg": -2.012025380820686,
+          "prediction_mean_deg": 0.3994052136153265,
+          "direction_accuracy": 0.44,
+          "signed_magnitude_shortfall_deg": 5.422042974662382
+        },
+        "positive_ge3": {
+          "n": 51,
+          "yaw_rmse_deg": 4.636215693224597,
+          "yaw_mae_deg": 4.42737114739172,
+          "signed_bias_deg": -4.42737114739172,
+          "rotation_geodesic_rmse_deg": 5.326951990547169,
+          "reference_mean_deg": 4.932327494806996,
+          "prediction_mean_deg": 0.5049563474152764,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 4.42737114739172
+        },
+        "negative_le_minus3": {
+          "n": 99,
+          "yaw_rmse_deg": 6.325351025472383,
+          "yaw_mae_deg": 5.934449673559389,
+          "signed_bias_deg": 5.934449673559389,
+          "rotation_geodesic_rmse_deg": 6.864896845076731,
+          "reference_mean_deg": -5.589419286447066,
+          "prediction_mean_deg": 0.345030387112322,
+          "direction_accuracy": 0.15151515151515152,
+          "signed_magnitude_shortfall_deg": 5.9344496735593895
+        }
+      }
+    },
+    "2_28_2021_outdoors_run9": {
+      "yaw_warmup": {
+        "all": {
+          "n": 558,
+          "yaw_rmse_deg": 1.607356148310786,
+          "yaw_mae_deg": 1.229163194676898,
+          "signed_bias_deg": 0.0039748716378660755,
+          "rotation_geodesic_rmse_deg": 2.8665225673655796,
+          "reference_mean_deg": 0.008237002981514474,
+          "prediction_mean_deg": 0.012211874619380626
+        },
+        "near_straight_abs_lt1": {
+          "n": 133,
+          "yaw_rmse_deg": 1.1607093699078572,
+          "yaw_mae_deg": 0.9355751138611761,
+          "signed_bias_deg": -0.07662365817647351,
+          "rotation_geodesic_rmse_deg": 2.6448873044722507,
+          "reference_mean_deg": 0.036975894225194865,
+          "prediction_mean_deg": -0.03964776395127897
+        },
+        "small_turn_1to3": {
+          "n": 198,
+          "yaw_rmse_deg": 1.2526851223936402,
+          "yaw_mae_deg": 0.9803474790688217,
+          "signed_bias_deg": -0.12193084248371557,
+          "rotation_geodesic_rmse_deg": 2.7225894665724697,
+          "reference_mean_deg": 0.0814561239320496,
+          "prediction_mean_deg": -0.04047471855166615
+        },
+        "strong_turn_abs_ge3": {
+          "n": 227,
+          "yaw_rmse_deg": 2.0476224745233544,
+          "yaw_mae_deg": 1.6182060424253124,
+          "signed_bias_deg": 0.16101864195231688,
+          "rotation_geodesic_rmse_deg": 3.103921973872459,
+          "reference_mean_deg": -0.07246633835599839,
+          "prediction_mean_deg": 0.08855230359631883,
+          "direction_accuracy": 0.9955947136563876,
+          "signed_magnitude_shortfall_deg": 1.39248703381097
+        },
+        "positive_ge3": {
+          "n": 112,
+          "yaw_rmse_deg": 2.0807961790270735,
+          "yaw_mae_deg": 1.6186986950077042,
+          "signed_bias_deg": -1.247961272106761,
+          "rotation_geodesic_rmse_deg": 3.0403053215280327,
+          "reference_mean_deg": 5.242107372652031,
+          "prediction_mean_deg": 3.994146100545272,
+          "direction_accuracy": 0.9910714285714286,
+          "signed_magnitude_shortfall_deg": 1.2479612721067597
+        },
+        "negative_le_minus3": {
+          "n": 115,
+          "yaw_rmse_deg": 2.0147892185711083,
+          "yaw_mae_deg": 1.6177262416494176,
+          "signed_bias_deg": 1.533242558253332,
+          "rotation_geodesic_rmse_deg": 3.1646500672354536,
+          "reference_mean_deg": -5.248398996033383,
+          "prediction_mean_deg": -3.7151564377800517,
+          "direction_accuracy": 1.0,
+          "signed_magnitude_shortfall_deg": 1.533242558253331
+        }
+      },
+      "frozen_cnn": {
+        "all": {
+          "n": 558,
+          "yaw_rmse_deg": 2.389434856613551,
+          "yaw_mae_deg": 1.8061610703851703,
+          "signed_bias_deg": 0.24311986667893995,
+          "rotation_geodesic_rmse_deg": 3.3695160834770856,
+          "reference_mean_deg": 0.008237002981514474,
+          "prediction_mean_deg": 0.25135686966045434
+        },
+        "near_straight_abs_lt1": {
+          "n": 133,
+          "yaw_rmse_deg": 1.7657961380923541,
+          "yaw_mae_deg": 1.436010891947897,
+          "signed_bias_deg": 0.20837443515166096,
+          "rotation_geodesic_rmse_deg": 2.9636761908802858,
+          "reference_mean_deg": 0.036975894225194865,
+          "prediction_mean_deg": 0.2453503293768556
+        },
+        "small_turn_1to3": {
+          "n": 198,
+          "yaw_rmse_deg": 1.9273371629834448,
+          "yaw_mae_deg": 1.5266834822998463,
+          "signed_bias_deg": 0.27264356624926256,
+          "rotation_geodesic_rmse_deg": 3.090855712910594,
+          "reference_mean_deg": 0.0814561239320496,
+          "prediction_mean_deg": 0.3540996901813121
+        },
+        "strong_turn_abs_ge3": {
+          "n": 227,
+          "yaw_rmse_deg": 2.994598195573053,
+          "yaw_mae_deg": 2.2668066041871584,
+          "signed_bias_deg": 0.23772537275032424,
+          "rotation_geodesic_rmse_deg": 3.798660931898695,
+          "reference_mean_deg": -0.07246633835599839,
+          "prediction_mean_deg": 0.1652590343943256,
+          "direction_accuracy": 0.9647577092511013,
+          "signed_magnitude_shortfall_deg": 2.0123860596161545
+        },
+        "positive_ge3": {
+          "n": 112,
+          "yaw_rmse_deg": 2.7059986019501356,
+          "yaw_mae_deg": 2.100817093206945,
+          "signed_bias_deg": -1.7984284639220696,
+          "rotation_geodesic_rmse_deg": 3.504941414256213,
+          "reference_mean_deg": 5.242107372652031,
+          "prediction_mean_deg": 3.4436789087299613,
+          "direction_accuracy": 0.9553571428571429,
+          "signed_magnitude_shortfall_deg": 1.7984284639220693
+        },
+        "negative_le_minus3": {
+          "n": 115,
+          "yaw_rmse_deg": 3.2511367664574187,
+          "yaw_mae_deg": 2.428465954011367,
+          "signed_bias_deg": 2.220762152813873,
+          "rotation_geodesic_rmse_deg": 4.064366299823104,
+          "reference_mean_deg": -5.248398996033383,
+          "prediction_mean_deg": -3.0276368432195118,
+          "direction_accuracy": 0.9739130434782609,
+          "signed_magnitude_shortfall_deg": 2.2207621528138723
+        }
+      },
+      "scratch_cnn": {
+        "all": {
+          "n": 558,
+          "yaw_rmse_deg": 3.8089294153050504,
+          "yaw_mae_deg": 2.909236259154208,
+          "signed_bias_deg": 0.36174721054024433,
+          "rotation_geodesic_rmse_deg": 4.49953988712671,
+          "reference_mean_deg": 0.008237002981514474,
+          "prediction_mean_deg": 0.3699842135217588
+        },
+        "near_straight_abs_lt1": {
+          "n": 133,
+          "yaw_rmse_deg": 0.7437439090336944,
+          "yaw_mae_deg": 0.5928870378711876,
+          "signed_bias_deg": 0.3807731938430432,
+          "rotation_geodesic_rmse_deg": 2.5089125309638747,
+          "reference_mean_deg": 0.036975894225194865,
+          "prediction_mean_deg": 0.4177490880682387
+        },
+        "small_turn_1to3": {
+          "n": 198,
+          "yaw_rmse_deg": 2.049626006109449,
+          "yaw_mae_deg": 1.8995563819251973,
+          "signed_bias_deg": 0.2965463412549407,
+          "rotation_geodesic_rmse_deg": 3.1930305771393983,
+          "reference_mean_deg": 0.0814561239320496,
+          "prediction_mean_deg": 0.37800246518698993
+        },
+        "strong_turn_abs_ge3": {
+          "n": 227,
+          "yaw_rmse_deg": 5.627994580862326,
+          "yaw_mae_deg": 5.147082347797317,
+          "signed_bias_deg": 0.407471071065433,
+          "rotation_geodesic_rmse_deg": 6.098062113208674,
+          "reference_mean_deg": -0.07246633835599839,
+          "prediction_mean_deg": 0.33500473270943454,
+          "direction_accuracy": 0.6387665198237885,
+          "signed_magnitude_shortfall_deg": 5.1470823477973155
+        },
+        "positive_ge3": {
+          "n": 112,
+          "yaw_rmse_deg": 5.362330702869011,
+          "yaw_mae_deg": 4.803088213473829,
+          "signed_bias_deg": -4.803088213473829,
+          "rotation_geodesic_rmse_deg": 5.803783413267239,
+          "reference_mean_deg": 5.242107372652031,
+          "prediction_mean_deg": 0.43901915917820317,
+          "direction_accuracy": 0.9285714285714286,
+          "signed_magnitude_shortfall_deg": 4.803088213473828
+        },
+        "negative_le_minus3": {
+          "n": 115,
+          "yaw_rmse_deg": 5.875192635514634,
+          "yaw_mae_deg": 5.482102722094975,
+          "signed_bias_deg": 5.482102722094975,
+          "rotation_geodesic_rmse_deg": 6.371613033835312,
+          "reference_mean_deg": -5.248398996033383,
+          "prediction_mean_deg": 0.23370372606159043,
+          "direction_accuracy": 0.3565217391304348,
+          "signed_magnitude_shortfall_deg": 5.482102722094973
+        }
+      }
+    }
+  },
+  "pooled": {
+    "yaw_warmup": {
+      "all": {
+        "n": 5018,
+        "yaw_rmse_deg": 1.7746764983393783,
+        "yaw_mae_deg": 1.3598330605589675,
+        "signed_bias_deg": -0.19583211152012137,
+        "rotation_geodesic_rmse_deg": 3.296953792570804,
+        "reference_mean_deg": 0.1388023941301197,
+        "prediction_mean_deg": -0.05702971739000178
+      },
+      "near_straight_abs_lt1": {
+        "n": 1398,
+        "yaw_rmse_deg": 1.2147451519519972,
+        "yaw_mae_deg": 0.9269225927850216,
+        "signed_bias_deg": -0.3057134206046584,
+        "rotation_geodesic_rmse_deg": 2.774467360065148,
+        "reference_mean_deg": -0.004157010394506504,
+        "prediction_mean_deg": -0.30987043099916484
+      },
+      "small_turn_1to3": {
+        "n": 1845,
+        "yaw_rmse_deg": 1.5646247324193696,
+        "yaw_mae_deg": 1.22599241650844,
+        "signed_bias_deg": -0.3163621531410178,
+        "rotation_geodesic_rmse_deg": 3.108760575275345,
+        "reference_mean_deg": 0.016501335517942684,
+        "prediction_mean_deg": -0.2998608176230755
+      },
+      "strong_turn_abs_ge3": {
+        "n": 1775,
+        "yaw_rmse_deg": 2.279674277670518,
+        "yaw_mae_deg": 1.8399146505427422,
+        "signed_bias_deg": 0.015994365601420445,
+        "rotation_geodesic_rmse_deg": 3.8237975786669463,
+        "reference_mean_deg": 0.37852222549062325,
+        "prediction_mean_deg": 0.39451659109204384,
+        "direction_accuracy": 0.9723943661971831,
+        "signed_magnitude_shortfall_deg": 1.5597466906236375
+      },
+      "positive_ge3": {
+        "n": 918,
+        "yaw_rmse_deg": 2.323444259223132,
+        "yaw_mae_deg": 1.8722779638836298,
+        "signed_bias_deg": -1.4924620789294307,
+        "rotation_geodesic_rmse_deg": 3.8122424002422446,
+        "reference_mean_deg": 5.7797890536648495,
+        "prediction_mean_deg": 4.287326974735419,
+        "direction_accuracy": 0.9575163398692811,
+        "signed_magnitude_shortfall_deg": 1.4924620789294307
+      },
+      "negative_le_minus3": {
+        "n": 857,
+        "yaw_rmse_deg": 2.231836790982248,
+        "yaw_mae_deg": 1.8052477641402505,
+        "signed_bias_deg": 1.6318205220533708,
+        "rotation_geodesic_rmse_deg": 3.8361366271111383,
+        "reference_mean_deg": -5.407198834327276,
+        "prediction_mean_deg": -3.7753783122739053,
+        "direction_accuracy": 0.9883313885647608,
+        "signed_magnitude_shortfall_deg": 1.6318205220533708
+      }
+    },
+    "frozen_cnn": {
+      "all": {
+        "n": 5018,
+        "yaw_rmse_deg": 2.456928437629359,
+        "yaw_mae_deg": 1.8709246111045346,
+        "signed_bias_deg": -0.018537163405462916,
+        "rotation_geodesic_rmse_deg": 3.713199279303493,
+        "reference_mean_deg": 0.1388023941301197,
+        "prediction_mean_deg": 0.12026523072465675
+      },
+      "near_straight_abs_lt1": {
+        "n": 1398,
+        "yaw_rmse_deg": 1.7294260873327365,
+        "yaw_mae_deg": 1.3605784960837242,
+        "signed_bias_deg": -0.024443671037162402,
+        "rotation_geodesic_rmse_deg": 3.0305522118492094,
+        "reference_mean_deg": -0.004157010394506504,
+        "prediction_mean_deg": -0.02860068143166901
+      },
+      "small_turn_1to3": {
+        "n": 1845,
+        "yaw_rmse_deg": 1.9871065665962049,
+        "yaw_mae_deg": 1.5755047485405915,
+        "signed_bias_deg": 0.0005017106457146623,
+        "rotation_geodesic_rmse_deg": 3.339132440202005,
+        "reference_mean_deg": 0.016501335517942684,
+        "prediction_mean_deg": 0.01700304616365734
+      },
+      "strong_turn_abs_ge3": {
+        "n": 1775,
+        "yaw_rmse_deg": 3.256602560087226,
+        "yaw_mae_deg": 2.579946309825417,
+        "signed_bias_deg": -0.033674867605635796,
+        "rotation_geodesic_rmse_deg": 4.48951565875304,
+        "reference_mean_deg": 0.37852222549062325,
+        "prediction_mean_deg": 0.3448473578849876,
+        "direction_accuracy": 0.927887323943662,
+        "signed_magnitude_shortfall_deg": 2.323602689304437
+      },
+      "positive_ge3": {
+        "n": 918,
+        "yaw_rmse_deg": 3.2616172329306474,
+        "yaw_mae_deg": 2.582099836880791,
+        "signed_bias_deg": -2.278958422393997,
+        "rotation_geodesic_rmse_deg": 4.4653603570167135,
+        "reference_mean_deg": 5.7797890536648495,
+        "prediction_mean_deg": 3.500830631270853,
+        "direction_accuracy": 0.9281045751633987,
+        "signed_magnitude_shortfall_deg": 2.2789584223939974
+      },
+      "negative_le_minus3": {
+        "n": 857,
+        "yaw_rmse_deg": 3.251222370202153,
+        "yaw_mae_deg": 2.5776394978804538,
+        "signed_bias_deg": 2.3714246694955494,
+        "rotation_geodesic_rmse_deg": 4.515246953236524,
+        "reference_mean_deg": -5.407198834327276,
+        "prediction_mean_deg": -3.035774164831727,
+        "direction_accuracy": 0.9276546091015169,
+        "signed_magnitude_shortfall_deg": 2.37142466949555
+      }
+    },
+    "scratch_cnn": {
+      "all": {
+        "n": 5018,
+        "yaw_rmse_deg": 3.785235914624599,
+        "yaw_mae_deg": 2.772466258397894,
+        "signed_bias_deg": 0.03198023440348082,
+        "rotation_geodesic_rmse_deg": 4.70052089799348,
+        "reference_mean_deg": 0.1388023941301197,
+        "prediction_mean_deg": 0.1707826285336007
+      },
+      "near_straight_abs_lt1": {
+        "n": 1398,
+        "yaw_rmse_deg": 0.7090641180126471,
+        "yaw_mae_deg": 0.5734472083514521,
+        "signed_bias_deg": 0.08893941472216062,
+        "rotation_geodesic_rmse_deg": 2.6074942201602105,
+        "reference_mean_deg": -0.004157010394506504,
+        "prediction_mean_deg": 0.08478240432765438
+      },
+      "small_turn_1to3": {
+        "n": 1845,
+        "yaw_rmse_deg": 1.9742017381093007,
+        "yaw_mae_deg": 1.8308546533173693,
+        "signed_bias_deg": 0.17340309576391402,
+        "rotation_geodesic_rmse_deg": 3.3363306848763714,
+        "reference_mean_deg": 0.016501335517942684,
+        "prediction_mean_deg": 0.1899044312818566
+      },
+      "strong_turn_abs_ge3": {
+        "n": 1775,
+        "yaw_rmse_deg": 6.004892227433175,
+        "yaw_mae_deg": 5.483171634926622,
+        "signed_bias_deg": -0.1598812378756818,
+        "rotation_geodesic_rmse_deg": 6.748198265715606,
+        "reference_mean_deg": 0.37852222549062325,
+        "prediction_mean_deg": 0.21864098761494197,
+        "direction_accuracy": 0.5988732394366197,
+        "signed_magnitude_shortfall_deg": 5.483171634926622
+      },
+      "positive_ge3": {
+        "n": 918,
+        "yaw_rmse_deg": 6.09695952656834,
+        "yaw_mae_deg": 5.455565822017478,
+        "signed_bias_deg": -5.455565822017478,
+        "rotation_geodesic_rmse_deg": 6.808735077777375,
+        "reference_mean_deg": 5.7797890536648495,
+        "prediction_mean_deg": 0.3242232316473727,
+        "direction_accuracy": 0.7799564270152506,
+        "signed_magnitude_shortfall_deg": 5.455565822017477
+      },
+      "negative_le_minus3": {
+        "n": 857,
+        "yaw_rmse_deg": 5.904679485055026,
+        "yaw_mae_deg": 5.51274238901133,
+        "signed_bias_deg": 5.51274238901133,
+        "rotation_geodesic_rmse_deg": 6.682744237878753,
+        "reference_mean_deg": -5.407198834327276,
+        "prediction_mean_deg": 0.10554355468405356,
+        "direction_accuracy": 0.4049008168028005,
+        "signed_magnitude_shortfall_deg": 5.512742389011331
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+MILLIEGO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+export UV_CACHE_DIR="$MILLIEGO_ROOT/.cache/uv"
+export UV_PYTHON_INSTALL_DIR="$MILLIEGO_ROOT/.cache/python"
+export UV_PYTHON_DOWNLOADS=never
+export UV_PROJECT_ENVIRONMENT="$MILLIEGO_ROOT/.venv"
+export TMPDIR="$MILLIEGO_ROOT/.tmp"
+export XDG_CACHE_HOME="$MILLIEGO_ROOT/.cache"
+export MPLCONFIGDIR="$MILLIEGO_ROOT/.cache/matplotlib"
+export TORCH_HOME="$MILLIEGO_ROOT/.cache/torch"
+export PYTHONPYCACHEPREFIX="$MILLIEGO_ROOT/.cache/pycache"
+export OMP_NUM_THREADS=4
+export MKL_NUM_THREADS=4

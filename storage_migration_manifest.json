@@ -1,0 +1,51 @@
+[
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/data",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/data",
+    "files": 182,
+    "checksum_verified": true,
+    "time": 1793881638.6549654
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/runs",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/runs",
+    "files": 1195,
+    "checksum_verified": true,
+    "time": 1793881734.5655234
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/weights",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/weights",
+    "files": 2,
+    "checksum_verified": true,
+    "time": 1793881735.19761
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/reports",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/reports",
+    "files": 295,
+    "checksum_verified": true,
+    "time": 1793881735.7032146
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/.venv",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/.venv",
+    "files": 22073,
+    "checksum_verified": true,
+    "time": 1793881754.0301187
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/.cache",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/.cache",
+    "files": 22511,
+    "checksum_verified": true,
+    "time": 1793881761.4160206
+  },
+  {
+    "source": "/home/metaiot_guest/Workspace/qinzx/milliEgo/.tmp",
+    "target": "/storage/ssd/metaiot_guest/RadarProbMap/baselines/milliego/.tmp",
+    "files": 4,
+    "checksum_verified": true,
+    "time": 1793881761.5125213
+  }
+]

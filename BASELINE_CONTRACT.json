@@ -1,0 +1,35 @@
+{
+  "framework": "PyTorch",
+  "environment": "uv",
+  "input": "radar only, user-required ablation",
+  "preserve_algorithm": true,
+  "formal_baseline_ready": false,
+  "reason": "Confirmed normalization/Euler fixes saved; exact projection configuration not yet recovered",
+  "diagnostic_runs_not_baseline_scores": [
+    "runs/pilot_lab0_gap5_v1",
+    "runs/diagnosis_lab0_v1"
+  ],
+  "corrected_data": "data/coloradar_lab0_contractfix_v2",
+  "report": "PREPROCESS_CONTRACT_AUDIT_20261102.md",
+  "preprocessing_corrections_tested": true,
+  "correction_validation_report": "runs/preprocess_ablation_v1/REPORT.md",
+  "correction_validation_conclusion": "No material improvement; exact projection processing remains unresolved",
+  "expanded_training": {
+    "completed": true,
+    "base_train_pairs": 692,
+    "expanded_train_pairs": 5593,
+    "added_sequences": 4,
+    "training_runs": 6,
+    "updates_per_run": 17600,
+    "model_unchanged": true,
+    "report": "runs/expanded_training_v1/REPORT.md",
+    "conclusion": "Pairwise translation/rotation improved, trajectory ATE worsened at matched updates; not baseline success."
+  },
+  "original_source_audit_20261103": {
+    "formal_radar_only_paper_match": false,
+    "reason": "Paper standalone radar subnet excludes both IMU and attention; current model retains radar attention. Projection differs from original function.",
+    "original_data_sample_verified": true,
+    "pure_radar_accuracy_measured_on_original_data": false,
+    "report": "reports/ORIGINAL_SOURCE_AUDIT_20261103.md"
+  }
+}

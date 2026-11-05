@@ -1,0 +1,25 @@
+[project]
+name = "milliego-radar-only"
+version = "0.1.0"
+description = "PyTorch radar-only adaptation of milliEgo; environment and dataset validation"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "torch==2.7.1",
+  "numpy==1.26.4",
+  "scipy>=1.14,<1.16",
+  "h5py>=3.12,<4",
+  "pyyaml>=6,<7",
+  "matplotlib>=3.9,<3.11",
+  "tqdm>=4.66,<5",
+  "pillow>=11,<12",
+  "tensorboard>=2.19,<2.21",
+  "opencv-python-headless>=4.10,<4.12",
+]
+[tool.uv]
+package = false
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

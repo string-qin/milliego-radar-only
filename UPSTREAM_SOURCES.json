@@ -1,0 +1,17 @@
+{
+  "upstream": {
+    "url": "https://github.com/ChristopherLu/milliEgo.git",
+    "commit": "9b163b92f871b7912dc3a27969b1761556cddad2",
+    "status": ""
+  },
+  "reference_odombeyondvision": {
+    "url": "https://github.com/mfkiwl/OdomBeyondVision.git",
+    "commit": "d30b06427457bf65a06c9c52245874d736b585fa",
+    "status": ""
+  },
+  "experiments/legacy_runs/adc_heatmap_pilot_v1/coloradar": {
+    "url": "https://github.com/azinke/coloradar.git",
+    "commit": "000626e644f34fbb067bfe33097dfc37482e6191",
+    "status": ""
+  }
+}

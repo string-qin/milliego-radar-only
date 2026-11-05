@@ -1,0 +1,524 @@
+[
+  {
+    "route": "12_21_2020_arpg_lab_run4",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.12378957733606853,
+    "pair_rotation_rmse_deg": 3.0881546484861193,
+    "segments": [
+      {
+        "poses": 171,
+        "ate_initial_rmse_m": 11.751307926039631,
+        "ate_se3_rmse_m": 1.5273473103189867,
+        "endpoint_error_m": 18.32891088753706,
+        "path_length_m": 24.619515734884303
+      }
+    ],
+    "ate_initial_rmse_m": 11.751307926039631,
+    "ate_se3_rmse_m": 1.5273473103189867,
+    "endpoint_error_m": 18.32891088753706
+  },
+  {
+    "route": "12_21_2020_arpg_lab_run4",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.15808710642492982,
+    "pair_rotation_rmse_deg": 3.6902390690787583,
+    "segments": [
+      {
+        "poses": 104,
+        "ate_initial_rmse_m": 6.291584059977257,
+        "ate_se3_rmse_m": 2.9661415508956086,
+        "endpoint_error_m": 10.653668854647533,
+        "path_length_m": 9.7786256816061
+      }
+    ],
+    "ate_initial_rmse_m": 6.291584059977257,
+    "ate_se3_rmse_m": 2.9661415508956086,
+    "endpoint_error_m": 10.653668854647533
+  },
+  {
+    "route": "12_21_2020_arpg_lab_run4",
+    "segment": 2,
+    "pair_translation_rmse_m": 0.11975825244847775,
+    "pair_rotation_rmse_deg": 5.514818193056734,
+    "segments": [
+      {
+        "poses": 262,
+        "ate_initial_rmse_m": 10.800748583841653,
+        "ate_se3_rmse_m": 2.5209151477567833,
+        "endpoint_error_m": 16.572350786246346,
+        "path_length_m": 39.015626824732024
+      }
+    ],
+    "ate_initial_rmse_m": 10.800748583841653,
+    "ate_se3_rmse_m": 2.5209151477567833,
+    "endpoint_error_m": 16.572350786246346
+  },
+  {
+    "route": "12_21_2020_arpg_lab_run4",
+    "segment": 3,
+    "pair_translation_rmse_m": 0.14299364979951415,
+    "pair_rotation_rmse_deg": 4.422518031534408,
+    "segments": [
+      {
+        "poses": 156,
+        "ate_initial_rmse_m": 7.1983564339564525,
+        "ate_se3_rmse_m": 3.2194916267775993,
+        "endpoint_error_m": 10.030100423505314,
+        "path_length_m": 21.5463147085604
+      }
+    ],
+    "ate_initial_rmse_m": 7.1983564339564525,
+    "ate_se3_rmse_m": 3.2194916267775993,
+    "endpoint_error_m": 10.030100423505314
+  },
+  {
+    "route": "12_21_2020_ec_hallways_run4",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.11731719621073555,
+    "pair_rotation_rmse_deg": 4.1610961124925545,
+    "segments": [
+      {
+        "poses": 427,
+        "ate_initial_rmse_m": 17.21065336862366,
+        "ate_se3_rmse_m": 11.304560957806636,
+        "endpoint_error_m": 28.857203452794792,
+        "path_length_m": 101.44786256203773
+      }
+    ],
+    "ate_initial_rmse_m": 17.21065336862366,
+    "ate_se3_rmse_m": 11.304560957806636,
+    "endpoint_error_m": 28.857203452794792
+  },
+  {
+    "route": "12_21_2020_ec_hallways_run4",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.08957746323342529,
+    "pair_rotation_rmse_deg": 1.053885448171829,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.06334083169384366,
+        "ate_se3_rmse_m": 0.04468153362515329,
+        "endpoint_error_m": 0.08957746323342529,
+        "path_length_m": 0.00880090428144084
+      }
+    ],
+    "ate_initial_rmse_m": 0.06334083169384366,
+    "ate_se3_rmse_m": 0.04468153362515329,
+    "endpoint_error_m": 0.08957746323342529
+  },
+  {
+    "route": "2_22_2021_longboard_run7",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.4980970299494822,
+    "pair_rotation_rmse_deg": 5.445970943278827,
+    "segments": [
+      {
+        "poses": 221,
+        "ate_initial_rmse_m": 48.308929866108606,
+        "ate_se3_rmse_m": 16.63905027821208,
+        "endpoint_error_m": 109.62300672094324,
+        "path_length_m": 130.9094167679233
+      }
+    ],
+    "ate_initial_rmse_m": 48.308929866108606,
+    "ate_se3_rmse_m": 16.63905027821208,
+    "endpoint_error_m": 109.62300672094324
+  },
+  {
+    "route": "2_22_2021_longboard_run7",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.8434684505765011,
+    "pair_rotation_rmse_deg": 2.2384226268569845,
+    "segments": [
+      {
+        "poses": 476,
+        "ate_initial_rmse_m": 254.41162160708672,
+        "ate_se3_rmse_m": 94.37877222955392,
+        "endpoint_error_m": 416.3769066273523,
+        "path_length_m": 554.646475582287
+      }
+    ],
+    "ate_initial_rmse_m": 254.41162160708672,
+    "ate_se3_rmse_m": 94.37877222955392,
+    "endpoint_error_m": 416.3769066273523
+  },
+  {
+    "route": "2_22_2021_longboard_run7",
+    "segment": 2,
+    "pair_translation_rmse_m": 0.7307930533860877,
+    "pair_rotation_rmse_deg": 2.740618333050503,
+    "segments": [
+      {
+        "poses": 428,
+        "ate_initial_rmse_m": 350.95832217254275,
+        "ate_se3_rmse_m": 86.23088341683824,
+        "endpoint_error_m": 598.8015299487337,
+        "path_length_m": 513.6153790381074
+      }
+    ],
+    "ate_initial_rmse_m": 350.95832217254275,
+    "ate_se3_rmse_m": 86.23088341683824,
+    "endpoint_error_m": 598.8015299487337
+  },
+  {
+    "route": "2_23_2021_edgar_army_run5",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.10885381991980773,
+    "pair_rotation_rmse_deg": 5.756532741350551,
+    "segments": [
+      {
+        "poses": 483,
+        "ate_initial_rmse_m": 34.597673342192365,
+        "ate_se3_rmse_m": 15.8854460665054,
+        "endpoint_error_m": 52.314351127731,
+        "path_length_m": 106.36929423862352
+      }
+    ],
+    "ate_initial_rmse_m": 34.597673342192365,
+    "ate_se3_rmse_m": 15.8854460665054,
+    "endpoint_error_m": 52.314351127731
+  },
+  {
+    "route": "2_23_2021_edgar_classroom_run5",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.10428428904015322,
+    "pair_rotation_rmse_deg": 5.8433909080592565,
+    "segments": [
+      {
+        "poses": 764,
+        "ate_initial_rmse_m": 64.26788759661865,
+        "ate_se3_rmse_m": 15.461524220060696,
+        "endpoint_error_m": 22.258352620507367,
+        "path_length_m": 185.9972495464113
+      }
+    ],
+    "ate_initial_rmse_m": 64.26788759661865,
+    "ate_se3_rmse_m": 15.461524220060696,
+    "endpoint_error_m": 22.258352620507367
+  },
+  {
+    "route": "2_23_2021_edgar_classroom_run5",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.1688031640840777,
+    "pair_rotation_rmse_deg": 0.9779915722583346,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.11936186200959681,
+        "ate_se3_rmse_m": 0.0556175832172311,
+        "endpoint_error_m": 0.1688031640840777,
+        "path_length_m": 0.03583116326002573
+      }
+    ],
+    "ate_initial_rmse_m": 0.11936186200959681,
+    "ate_se3_rmse_m": 0.0556175832172311,
+    "endpoint_error_m": 0.1688031640840777
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.13455945428784089,
+    "pair_rotation_rmse_deg": 0.7008173563977763,
+    "segments": [
+      {
+        "poses": 7,
+        "ate_initial_rmse_m": 0.4761567765348333,
+        "ate_se3_rmse_m": 0.26244658435571105,
+        "endpoint_error_m": 0.8031168900599635,
+        "path_length_m": 0.03162170704105241
+      }
+    ],
+    "ate_initial_rmse_m": 0.4761567765348333,
+    "ate_se3_rmse_m": 0.26244658435571105,
+    "endpoint_error_m": 0.8031168900599635
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.1442689514320145,
+    "pair_rotation_rmse_deg": 0.5419742537599412,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.10201355387225013,
+        "ate_se3_rmse_m": 0.07152616265055264,
+        "endpoint_error_m": 0.1442689514320145,
+        "path_length_m": 0.00249033932902171
+      }
+    ],
+    "ate_initial_rmse_m": 0.10201355387225013,
+    "ate_se3_rmse_m": 0.07152616265055264,
+    "endpoint_error_m": 0.1442689514320145
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 2,
+    "pair_translation_rmse_m": 0.1279820791845457,
+    "pair_rotation_rmse_deg": 0.47423559092912865,
+    "segments": [
+      {
+        "poses": 3,
+        "ate_initial_rmse_m": 0.15780355336731292,
+        "ate_se3_rmse_m": 0.09886572932021331,
+        "endpoint_error_m": 0.25116174965270477,
+        "path_length_m": 0.009396620811465748
+      }
+    ],
+    "ate_initial_rmse_m": 0.15780355336731292,
+    "ate_se3_rmse_m": 0.09886572932021331,
+    "endpoint_error_m": 0.25116174965270477
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 3,
+    "pair_translation_rmse_m": 0.13388500132645154,
+    "pair_rotation_rmse_deg": 3.655301656098595,
+    "segments": [
+      {
+        "poses": 29,
+        "ate_initial_rmse_m": 1.661183317370657,
+        "ate_se3_rmse_m": 0.6082470723089981,
+        "endpoint_error_m": 1.9294605344478784,
+        "path_length_m": 3.1062201427978167
+      }
+    ],
+    "ate_initial_rmse_m": 1.661183317370657,
+    "ate_se3_rmse_m": 0.6082470723089981,
+    "endpoint_error_m": 1.9294605344478784
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 4,
+    "pair_translation_rmse_m": 0.08916352029568551,
+    "pair_rotation_rmse_deg": 5.769910905472969,
+    "segments": [
+      {
+        "poses": 109,
+        "ate_initial_rmse_m": 4.383727485415616,
+        "ate_se3_rmse_m": 2.7376254679820136,
+        "endpoint_error_m": 7.888744352161669,
+        "path_length_m": 15.688338239117272
+      }
+    ],
+    "ate_initial_rmse_m": 4.383727485415616,
+    "ate_se3_rmse_m": 2.7376254679820136,
+    "endpoint_error_m": 7.888744352161669
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 5,
+    "pair_translation_rmse_m": 0.03692945098833503,
+    "pair_rotation_rmse_deg": 2.7643918465753123,
+    "segments": [
+      {
+        "poses": 14,
+        "ate_initial_rmse_m": 0.38107686281221526,
+        "ate_se3_rmse_m": 0.0589468560982486,
+        "endpoint_error_m": 0.6812307904273542,
+        "path_length_m": 2.3005016268737286
+      }
+    ],
+    "ate_initial_rmse_m": 0.38107686281221526,
+    "ate_se3_rmse_m": 0.0589468560982486,
+    "endpoint_error_m": 0.6812307904273542
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 6,
+    "pair_translation_rmse_m": 0.09694771630077609,
+    "pair_rotation_rmse_deg": 5.238331763808294,
+    "segments": [
+      {
+        "poses": 99,
+        "ate_initial_rmse_m": 5.224113831632142,
+        "ate_se3_rmse_m": 3.1377183624659897,
+        "endpoint_error_m": 13.162531528921454,
+        "path_length_m": 16.805082948257414
+      }
+    ],
+    "ate_initial_rmse_m": 5.224113831632142,
+    "ate_se3_rmse_m": 3.1377183624659897,
+    "endpoint_error_m": 13.162531528921454
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 7,
+    "pair_translation_rmse_m": 0.10305576745088454,
+    "pair_rotation_rmse_deg": 5.821771452515516,
+    "segments": [
+      {
+        "poses": 248,
+        "ate_initial_rmse_m": 16.630294552613805,
+        "ate_se3_rmse_m": 6.288731216926495,
+        "endpoint_error_m": 28.36762414192035,
+        "path_length_m": 40.15659140575977
+      }
+    ],
+    "ate_initial_rmse_m": 16.630294552613805,
+    "ate_se3_rmse_m": 6.288731216926495,
+    "endpoint_error_m": 28.36762414192035
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 8,
+    "pair_translation_rmse_m": 0.12214154777585706,
+    "pair_rotation_rmse_deg": 0.7645359654370086,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.0863671166969292,
+        "ate_se3_rmse_m": 0.06098866506374491,
+        "endpoint_error_m": 0.12214154777585706,
+        "path_length_m": 0.011729929720505647
+      }
+    ],
+    "ate_initial_rmse_m": 0.0863671166969292,
+    "ate_se3_rmse_m": 0.06098866506374491,
+    "endpoint_error_m": 0.12214154777585706
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 9,
+    "pair_translation_rmse_m": 0.12860896007734957,
+    "pair_rotation_rmse_deg": 0.6623559688700703,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.09094026779204384,
+        "ate_se3_rmse_m": 0.0636049139060586,
+        "endpoint_error_m": 0.12860896007734957,
+        "path_length_m": 0.00897973898972238
+      }
+    ],
+    "ate_initial_rmse_m": 0.09094026779204384,
+    "ate_se3_rmse_m": 0.0636049139060586,
+    "endpoint_error_m": 0.12860896007734957
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 10,
+    "pair_translation_rmse_m": 0.1324105883056268,
+    "pair_rotation_rmse_deg": 1.424908553618479,
+    "segments": [
+      {
+        "poses": 4,
+        "ate_initial_rmse_m": 0.25133042980556247,
+        "ate_se3_rmse_m": 0.14134502015835718,
+        "endpoint_error_m": 0.3924632374426565,
+        "path_length_m": 0.06415703660593376
+      }
+    ],
+    "ate_initial_rmse_m": 0.25133042980556247,
+    "ate_se3_rmse_m": 0.14134502015835718,
+    "endpoint_error_m": 0.3924632374426565
+  },
+  {
+    "route": "2_24_2021_aspen_run11",
+    "segment": 11,
+    "pair_translation_rmse_m": 0.1365050732205844,
+    "pair_rotation_rmse_deg": 1.1063088670631522,
+    "segments": [
+      {
+        "poses": 2,
+        "ate_initial_rmse_m": 0.09652366294064141,
+        "ate_se3_rmse_m": 0.04843030415523833,
+        "endpoint_error_m": 0.1365050732205844,
+        "path_length_m": 0.020397103204603858
+      }
+    ],
+    "ate_initial_rmse_m": 0.09652366294064141,
+    "ate_se3_rmse_m": 0.04843030415523833,
+    "endpoint_error_m": 0.1365050732205844
+  },
+  {
+    "route": "2_28_2021_outdoors_run8",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.10471861357329285,
+    "pair_rotation_rmse_deg": 4.622878904985834,
+    "segments": [
+      {
+        "poses": 214,
+        "ate_initial_rmse_m": 37.81237677199783,
+        "ate_se3_rmse_m": 3.623646164418039,
+        "endpoint_error_m": 71.85054676583887,
+        "path_length_m": 56.37754105045432
+      }
+    ],
+    "ate_initial_rmse_m": 37.81237677199783,
+    "ate_se3_rmse_m": 3.623646164418039,
+    "endpoint_error_m": 71.85054676583887
+  },
+  {
+    "route": "2_28_2021_outdoors_run8",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.052149214739745826,
+    "pair_rotation_rmse_deg": 3.273157441193229,
+    "segments": [
+      {
+        "poses": 9,
+        "ate_initial_rmse_m": 0.2913709075571435,
+        "ate_se3_rmse_m": 0.11257607042888547,
+        "endpoint_error_m": 0.48783363755251574,
+        "path_length_m": 2.13140325486758
+      }
+    ],
+    "ate_initial_rmse_m": 0.2913709075571435,
+    "ate_se3_rmse_m": 0.11257607042888547,
+    "endpoint_error_m": 0.48783363755251574
+  },
+  {
+    "route": "2_28_2021_outdoors_run8",
+    "segment": 2,
+    "pair_translation_rmse_m": 0.09784463633085831,
+    "pair_rotation_rmse_deg": 4.174469588557449,
+    "segments": [
+      {
+        "poses": 247,
+        "ate_initial_rmse_m": 47.91411552208883,
+        "ate_se3_rmse_m": 4.439210210409389,
+        "endpoint_error_m": 81.41792708517767,
+        "path_length_m": 61.159871881051046
+      }
+    ],
+    "ate_initial_rmse_m": 47.91411552208883,
+    "ate_se3_rmse_m": 4.439210210409389,
+    "endpoint_error_m": 81.41792708517767
+  },
+  {
+    "route": "2_28_2021_outdoors_run9",
+    "segment": 0,
+    "pair_translation_rmse_m": 0.0921845709020765,
+    "pair_rotation_rmse_deg": 4.395685001620314,
+    "segments": [
+      {
+        "poses": 382,
+        "ate_initial_rmse_m": 71.73596178127843,
+        "ate_se3_rmse_m": 16.835888680021842,
+        "endpoint_error_m": 86.70529127805335,
+        "path_length_m": 101.50611246337171
+      }
+    ],
+    "ate_initial_rmse_m": 71.73596178127843,
+    "ate_se3_rmse_m": 16.835888680021842,
+    "endpoint_error_m": 86.70529127805335
+  },
+  {
+    "route": "2_28_2021_outdoors_run9",
+    "segment": 1,
+    "pair_translation_rmse_m": 0.11820088588885187,
+    "pair_rotation_rmse_deg": 4.715337196578967,
+    "segments": [
+      {
+        "poses": 178,
+        "ate_initial_rmse_m": 9.411364517046158,
+        "ate_se3_rmse_m": 5.481232787432848,
+        "endpoint_error_m": 13.02100297726674,
+        "path_length_m": 43.66302314438376
+      }
+    ],
+    "ate_initial_rmse_m": 9.411364517046158,
+    "ate_se3_rmse_m": 5.481232787432848,
+    "endpoint_error_m": 13.02100297726674
+  }
+]
